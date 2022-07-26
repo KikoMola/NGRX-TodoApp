@@ -3,9 +3,10 @@ export class Todo {
   public texto: string;
   public completado: boolean;
 
-  constructor(texto: string) {
+  constructor(texto: string) {    
+    this.id = new Date().getTime();
     this.texto = texto;
     this.completado = false;
-    this.id = new Date().getTime();
+    
   }
 }
